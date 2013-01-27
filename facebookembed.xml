@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" method="upgrade" group="content">
+	<name>PLG_CONTENT_FACEBOOKEMBED</name>
+	<author>Martin Kollerup</author>
+	<creationDate>January 2013</creationDate>
+	<copyright>Copyright (C) 2013 Martin Kollerup All rights reserved.</copyright>
+	<license>http://www.gnu.org, see LICENSE.php</license>
+	<authorEmail>martin.kollerup@gmail.com</authorEmail>
+	<authorUrl>http://kollerups.dk</authorUrl>
+	<version>1.0</version>
+	<description>PLG_CONTENT_FACEBOOKEMBED_DESCRIPTION</description>
+	<files>
+		<filename plugin="facebookembed">facebookembed.php</filename>
+        <filename>index.html</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_content_facebookembed.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_content_facebookembed.sys.ini</language>
+	</languages>
+<config>
+	<fields name="params">
+		<fieldset name="basic">
+			<field name="responsive" type="list" default="1" label="PLG_CONTENT_FACEBOOKEMBED_RESPONSIVE" description="PLG_CONTENT_FACEBOOKEMBED_RESPONSIVE_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="ratio" type="text" default="" label="PLG_CONTENT_FACEBOOKEMBED_RATIO" description="PLG_CONTENT_FACEBOOKEMBED_RATIO_DESC" />
+	        <field name="width" type="text" default="" label="PLG_CONTENT_FACEBOOKEMBED_WIDTH" description="PLG_CONTENT_FACEBOOKEMBED_WIDTH_DESC" />
+			<field name="height" type="text" default="" label="PLG_CONTENT_FACEBOOKEMBED_HEIGHT" description="PLG_CONTENT_FACEBOOKEMBED_HEIGHT_DESC" />
+	        <field name="fullscr" type="list" default="1" label="PLG_CONTENT_FACEBOOKEMBED_FULLSCREEN" description="PLG_CONTENT_FACEBOOKEMBED_FULLSCREEN_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+	     </fieldset>
+    </fields>
+</config>
+</extension>
