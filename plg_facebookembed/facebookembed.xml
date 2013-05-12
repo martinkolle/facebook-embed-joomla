@@ -17,21 +17,24 @@
 		<language tag="en-GB">en-GB/en-GB.plg_content_facebookembed.ini</language>
 		<language tag="en-GB">en-GB/en-GB.plg_content_facebookembed.sys.ini</language>
 	</languages>
-<config>
-	<fields name="params">
-		<fieldset name="basic">
-			<field name="responsive" type="list" default="1" label="PLG_CONTENT_FACEBOOKEMBED_RESPONSIVE" description="PLG_CONTENT_FACEBOOKEMBED_RESPONSIVE_DESC">
-				<option value="0">JNO</option>
-				<option value="1">JYES</option>
-			</field>
-			<field name="ratio" type="text" default="" label="PLG_CONTENT_FACEBOOKEMBED_RATIO" description="PLG_CONTENT_FACEBOOKEMBED_RATIO_DESC" />
-	        <field name="width" type="text" default="" label="PLG_CONTENT_FACEBOOKEMBED_WIDTH" description="PLG_CONTENT_FACEBOOKEMBED_WIDTH_DESC" />
-			<field name="height" type="text" default="" label="PLG_CONTENT_FACEBOOKEMBED_HEIGHT" description="PLG_CONTENT_FACEBOOKEMBED_HEIGHT_DESC" />
-	        <field name="fullscr" type="list" default="1" label="PLG_CONTENT_FACEBOOKEMBED_FULLSCREEN" description="PLG_CONTENT_FACEBOOKEMBED_FULLSCREEN_DESC">
-				<option value="0">JNO</option>
-				<option value="1">JYES</option>
-			</field>
-	     </fieldset>
-    </fields>
-</config>
+	<updateservers>
+        <server type="extension" priority="1" name="Facebook Embed updates"><![CDATA[http://update.kmweb.dk/xml/facebookembed.xml]]></server>
+    </updateservers>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="responsive" type="list" default="1" label="PLG_CONTENT_FACEBOOKEMBED_RESPONSIVE" description="PLG_CONTENT_FACEBOOKEMBED_RESPONSIVE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="ratio" type="text" default="" label="PLG_CONTENT_FACEBOOKEMBED_RATIO" description="PLG_CONTENT_FACEBOOKEMBED_RATIO_DESC" />
+		        <field name="width" type="text" default="" label="PLG_CONTENT_FACEBOOKEMBED_WIDTH" description="PLG_CONTENT_FACEBOOKEMBED_WIDTH_DESC" />
+				<field name="height" type="text" default="" label="PLG_CONTENT_FACEBOOKEMBED_HEIGHT" description="PLG_CONTENT_FACEBOOKEMBED_HEIGHT_DESC" />
+		        <field name="fullscr" type="list" default="1" label="PLG_CONTENT_FACEBOOKEMBED_FULLSCREEN" description="PLG_CONTENT_FACEBOOKEMBED_FULLSCREEN_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+		     </fieldset>
+	    </fields>
+	</config>
 </extension>
